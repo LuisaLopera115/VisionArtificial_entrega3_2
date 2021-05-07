@@ -32,8 +32,7 @@ public class GlobalCode : MonoBehaviour
     }
 
     public void endGameBotton() {
-        SceneManager.LoadScene("SampleScene");
-        
+        SceneManager.LoadScene("Pt");//("SampleScene");        
         Time.timeScale = 1;
     }
 }

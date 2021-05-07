@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Avion.transform.position += new Vector3(Speed*Time.deltaTime,0,0)*0;
+        //Avion.transform.position += new Vector3(Speed*Time.deltaTime,0,0)*0;
     }
 
     void OnCollisionEnter(Collision collision)

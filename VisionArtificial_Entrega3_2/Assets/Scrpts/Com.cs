@@ -9,53 +9,60 @@ using System.Text;
 public class Com : MonoBehaviour
 {
     //region Private data
-    public GameObject Avion;
+    Transform Avion;
 
     UdpClient client;
     float valor = 0;
-    int move = 0;
-    float speed = 200f;
+    Vector3 move;
+    float speed = 0;
     int port;
     private Thread _t1;
     //private Thread _t2;
-    float smooth = 0.8f;
+    [SerializeField] CharacterController controller;
     Quaternion target;
 
     Queue queue;
 
     void Start()
     {
-        target = Quaternion.Euler(0, 0, 0);
+        Avion = GameObject.Find("Airplane").GetComponent<Transform>();
+        target = Quaternion.Euler(-90, -90, 0);
         queue = new Queue();
         port = 5065;
         InicializeThread();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (queue.Count > 0)
         {
-            valor = -1*float.Parse(queue.Dequeue().ToString()) / 5.0f;
-            Debug.Log("Llego: " + valor);
-            //Avion.transform.rotation = Quaternion.Euler(valor, 0, 0);
+            valor = float.Parse(queue.Dequeue().ToString()) / 5.0f;
 
-            target = Quaternion.Euler(valor, 0, 0);
-            //Debug.Log("Euler: " + target.eulerAngles);
-           // Avion.transform.rotation = Quaternion.Euler(valor, 0, 0);
+            float sen = valor > 0 ? 1 : -1;
+            valor = Math.Abs(valor);
+            if (valor < 20 && valor >= 0) valor = 0;
+            else if (valor < 80 && valor >= 20) valor = 1 * sen;
+            else if (valor < 150 && valor >= 80) valor = 2 * sen;
+            else if (valor < 550 && valor >= 150) valor = 3 * sen;
+
         }
+
+        speed = valor * 30 * Time.deltaTime;
+
         
-        Avion.transform.rotation = Quaternion.Slerp(Avion.transform.rotation, target, Time.deltaTime * smooth);//Time.deltaTime * smooth
+        if (speed == 0 )
+        {
+            Avion.rotation = Quaternion.Slerp(Avion.rotation, target, Time.deltaTime * 1);
+            
+        }
+        else
+        {
+            Avion.Rotate(Vector3.up * speed);
+        }
+
+        move = Avion.forward * speed;
+        controller.Move(move * 1f);
         
-        if (valor >= 10)
-        {
-            move = 1;
-        }
-        else if (valor < -10)
-        {
-            move = -1;
-        }
-        Avion.transform.position += new Vector3(0, 0, move) * Time.deltaTime * speed;
     }
 
     void InicializeThread()
