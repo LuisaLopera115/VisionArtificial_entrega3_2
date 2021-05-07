@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: -5654926569745128941}
-  Velocidad: 1000
+  Velocidad: 500
 --- !u!1 &8709645754479830111
 GameObject:
   m_ObjectHideFlags: 0

@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 3838462564025614269}
-  Velocidad: 1000
+  Velocidad: 500
 --- !u!1001 &109417135146544626
 PrefabInstance:
   m_ObjectHideFlags: 0

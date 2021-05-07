@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: -589230386437431574}
-  Velocidad: 1000
+  Velocidad: 500
 --- !u!65 &2321767476201096883
 BoxCollider:
   m_ObjectHideFlags: 0

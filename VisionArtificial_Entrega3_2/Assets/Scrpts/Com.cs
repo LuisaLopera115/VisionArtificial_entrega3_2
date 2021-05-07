@@ -63,7 +63,7 @@ public class Com : MonoBehaviour
         
         if (Avion.localEulerAngles.y < 0 && Avion.localEulerAngles.y >= -0.001 || Avion.localEulerAngles.y > 0 && Avion.localEulerAngles.y <= 0.001) Avion.eulerAngles = new Vector3(0, 0, 0);
 
-        desplazamiento.transform.position += new Vector3(0, 0, speed * 15);
+        desplazamiento.transform.position += new Vector3(0, 0, speed*20);
         
         
     }
