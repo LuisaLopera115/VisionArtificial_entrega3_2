@@ -10,16 +10,16 @@ public class Com : MonoBehaviour
 {
     //region Private data
     public GameObject Avion;
+
     UdpClient client;
     float valor = 0;
     int move = 0;
     float speed = 200f;
     int port;
     private Thread _t1;
-    private Thread _t2;
-    float smooth = 1f;
+    //private Thread _t2;
+    float smooth = 0.8f;
     Quaternion target;
-
 
     Queue queue;
 
@@ -36,15 +36,17 @@ public class Com : MonoBehaviour
     {
         if (queue.Count > 0)
         {
-            valor = float.Parse(queue.Dequeue().ToString()) / 5.0f;
-            Debug.Log(valor);
+            valor = -1*float.Parse(queue.Dequeue().ToString()) / 5.0f;
+            Debug.Log("Llego: " + valor);
             //Avion.transform.rotation = Quaternion.Euler(valor, 0, 0);
 
             target = Quaternion.Euler(valor, 0, 0);
             //Debug.Log("Euler: " + target.eulerAngles);
            // Avion.transform.rotation = Quaternion.Euler(valor, 0, 0);
         }
+        
         Avion.transform.rotation = Quaternion.Slerp(Avion.transform.rotation, target, Time.deltaTime * smooth);//Time.deltaTime * smooth
+        
         if (valor >= 10)
         {
             move = 1;
