@@ -8,6 +8,7 @@ public class GlobalCode : MonoBehaviour
 {
     public int Coins = 0;
     public Text score;
+
     void Start()
     {
         
@@ -25,13 +26,14 @@ public class GlobalCode : MonoBehaviour
     }
     public void CoinManagerLess()
     { 
-        if (Coins < 0){Coins = 0;}
+        if (Coins <= 0){Coins = 0;}
         else { Coins -= 1; }
         score.text = Coins.ToString();
     }
 
     public void endGameBotton() {
         SceneManager.LoadScene("SampleScene");
+        
         Time.timeScale = 1;
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6327306, g: 0.87350535, b: 0.9880082, a: 1}
+  m_IndirectSpecularColor: {r: 0.63273364, g: 0.87350684, b: 0.9880082, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1009,10 +1009,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1053236069}
-  - component: {fileID: 1053236068}
   - component: {fileID: 1053236071}
   - component: {fileID: 1053236070}
   - component: {fileID: 1053236072}
+  - component: {fileID: 1053236068}
   m_Layer: 0
   m_Name: Avion
   m_TagString: Untagged

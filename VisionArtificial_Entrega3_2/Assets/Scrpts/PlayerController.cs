@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         Avion.transform.position += new Vector3(Speed*Time.deltaTime,0,0);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == 6)
         {
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
             Score.CoinManagerPlus();
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.layer==7)
+        if (collision.gameObject.layer == 7)
         {
             Debug.Log("Sin Moneda");
             Score.CoinManagerLess();
@@ -37,15 +37,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Game Over");
             gameOver.SetActive(true);
             Time.timeScale = 0;
-        }
-    }
-
-    private void OnCollisionTrigger(Collision collision)
-    {
-        if (collision.gameObject.layer == 7)
-        {
-            Debug.Log("Sin Moneda");
-            Score.CoinManagerLess();
         }
     }
 }

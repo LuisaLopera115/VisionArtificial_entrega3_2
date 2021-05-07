@@ -792,6 +792,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -800,11 +804,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &1441471751378567489 stripped
 Transform:
@@ -866,6 +867,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -874,11 +879,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &1443302013126108335 stripped
 Transform:
@@ -1076,6 +1078,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -1084,11 +1090,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &2819126152135822055 stripped
 Transform:
@@ -1216,6 +1219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -1224,11 +1231,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &2599919849991675040 stripped
 Transform:
@@ -1500,6 +1504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -1508,11 +1516,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &3723535319786283158 stripped
 Transform:
@@ -1714,6 +1719,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -1721,10 +1730,6 @@ PrefabInstance:
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_IsKinematic
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
@@ -1788,6 +1793,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -1796,11 +1805,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &5153407043457009182 stripped
 Transform:
@@ -2274,6 +2280,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -2282,11 +2292,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &5884530727252070830 stripped
 Transform:
@@ -2620,6 +2627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -2628,11 +2639,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &7183767560489797913 stripped
 Transform:
@@ -3378,6 +3386,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -3386,11 +3398,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &8028395444765867838 stripped
 Transform:
@@ -3522,6 +3531,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610003448083225193, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5218154827639095539, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -3530,11 +3543,8 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7441630021573516670, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 460a9ea4dfb88304fa2d7c3d7eacdad9, type: 3}
 --- !u!4 &7916874080660930319 stripped
 Transform:

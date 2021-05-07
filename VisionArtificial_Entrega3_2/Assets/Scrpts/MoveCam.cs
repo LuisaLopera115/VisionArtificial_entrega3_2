@@ -11,12 +11,12 @@ public class MoveCam : MonoBehaviour
     float ofsetz = 5;
     void Start()
     {
-        cam = gameObject.GetComponent<Transform>();
+        //cam = gameObject.GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        cam.position = new Vector3(Avion.transform.position.x + ofsetx, Avion.transform.position.y + ofsety, Avion.transform.position.z + ofsetz);
+        transform.position = new Vector3(Avion.transform.position.x + ofsetx, Avion.transform.position.y + ofsety, Avion.transform.position.z + ofsetz);
     }
 }
