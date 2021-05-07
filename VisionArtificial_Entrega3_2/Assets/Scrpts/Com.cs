@@ -8,23 +8,24 @@ using System.Text;
 
 public class Com : MonoBehaviour
 {
-    //region Private data
+    [SerializeField] CharacterController controller;
+    [SerializeField] GameObject desplazamiento;
+
     Transform Avion;
 
     UdpClient client;
     float valor = 0;
-    Vector3 move;
     float speed = 0;
     int port;
     private Thread _t1;
-    //private Thread _t2;
-    [SerializeField] CharacterController controller;
+    
     Quaternion target;
 
     Queue queue;
 
     void Start()
     {
+        desplazamiento = GameObject.Find("Personaje");
         Avion = GameObject.Find("Airplane").GetComponent<Transform>();
         target = Quaternion.Euler(-90, -90, 0);
         queue = new Queue();
@@ -55,13 +56,15 @@ public class Com : MonoBehaviour
             Avion.rotation = Quaternion.Slerp(Avion.rotation, target, Time.deltaTime * 1);
             
         }
-        else
+        else if((Avion.localEulerAngles.y < 360 && Avion.localEulerAngles.y >= 315) || (Avion.localEulerAngles.y < 45 && Avion.localEulerAngles.y >= 0))
         {
-            Avion.Rotate(Vector3.up * speed);
+            Avion.Rotate(Vector3.up * speed);            
         }
+        
+        if (Avion.localEulerAngles.y < 0 && Avion.localEulerAngles.y >= -0.001 || Avion.localEulerAngles.y > 0 && Avion.localEulerAngles.y <= 0.001) Avion.eulerAngles = new Vector3(0, 0, 0);
 
-        move = Avion.forward * speed;
-        controller.Move(move * 1f);
+        desplazamiento.transform.position += new Vector3(0, 0, speed * 15);
+        
         
     }
 
